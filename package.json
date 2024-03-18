@@ -14,11 +14,11 @@
   "author": "Rob Lourens",
   "license": "MIT",
   "dependencies": {
-    "https-proxy-agent": "7.0.2",
-    "yauzl": "2.9.2",
+    "https-proxy-agent": "7.0.4",
+    "yauzl": "3.1.2",
     "proxy-from-env": "1.1.0"
   },
   "devDependencies": {
-    "@types/node": "20.8.4"
+    "@types/node": "20.11.28"
   }
 }
