@@ -1,24 +1,39 @@
 {
-  "name": "@vscode/ripgrep",
-  "version": "1.15.9",
-  "description": "A module for using ripgrep in a Node project",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/microsoft/vscode-ripgrep"
-  },
-  "scripts": {
-    "postinstall": "node ./lib/postinstall.js"
-  },
-  "author": "Rob Lourens",
-  "license": "MIT",
-  "dependencies": {
-    "https-proxy-agent": "7.0.4",
-    "yauzl": "3.1.2",
-    "proxy-from-env": "1.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "20.11.30"
-  }
+	"name": "@vscode/ripgrep",
+	"version": "0.0.1",
+	"private": false,
+	"description": "A module for using ripgrep in a Node project",
+	"homepage": "https://github.com/CodeEditorLand/Foundation#readme",
+	"bugs": {
+		"url": "https://github.com/CodeEditorLand/Foundation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeEditorLand/Foundation.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Playform",
+		"email": "Hello@Playform.Cloud",
+		"url": "https://playform.cloud"
+	},
+	"type": "module",
+	"main": "lib/index.js",
+	"typings": "lib/index.d.ts",
+	"scripts": {
+		"postinstall": "node ./lib/postinstall.js",
+		"prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
+	},
+	"dependencies": {
+		"https-proxy-agent": "7.0.4",
+		"proxy-from-env": "1.1.0",
+		"yauzl": "3.1.2"
+	},
+	"devDependencies": {
+		"@types/node": "20.11.30",
+		"typescript-esbuild": "latest"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
